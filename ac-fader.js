@@ -1,20 +1,22 @@
 $(document).ready(makespotlight);
 
 var spot = 4000; // time slides stay visible for
+var int = 300 // time it takes for slides to transition
+var randomize = false; // change to true to have the images display in random order
 var t;
 var imgs = new Array;
 var imgn = 0;
-var int = 300 // time it takes for slides to transition
 
 function makespotlight() {
-	$('#fader img').fadeTo(0,0);
+	$('#ac-fader').children().fadeTo(0,0);
 	x = 0;
-	$('#fader img').each(function(){
+	$('#ac-fader').children().each(function(){
 		imgs[x] = this;
 		x++;
 	});
-	// comment out the next line if you don't want the images to display in random order
-	imgs.sort(function(){ return Math.random()-0.5; });
+	if (randomize == true) {
+		imgs.sort(function(){ return Math.random()-0.5; });
+	}
 	$(imgs[imgn]).fadeTo(int,1);
 	t = setTimeout('spotlight()',spot);
 }
