@@ -1,0 +1,12 @@
+Ashram Creative Lightweight jQuery Fader
+
+Installation:
+
+1.	Upload "ac-fader.css" and "ac-fader.js" to the directory where your page is located.
+2.	Make sure that your page is loading the jQuery library.
+2.	Load them on the page by inserting:
+	<link href="ac-fader.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" language="javascript" src="ac-fader.js"></script>
+3.	Add the fader to your page by adding the following HTML into your page:
+	<div id="#ac-fader"></div>
+4.	Put any images or slides inside the <div#ac-fader>.
