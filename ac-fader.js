@@ -8,19 +8,17 @@ var imgs = new Array;
 var imgn = 0;
 
 function makespotlight() {
-	if ($('#ac-fader').length > 0) {
-		$('#ac-fader').children().fadeTo(0,0);
-		x = 0;
-		$('#ac-fader').children().each(function(){
-			imgs[x] = this;
-			x++;
-		});
-		if (randomize == true) {
-			imgs.sort(function(){ return Math.random()-0.5; });
-		}
-		$(imgs[imgn]).fadeTo(int,1);
-		t = setTimeout('spotlight()',spot);
+	$('#ac-fader').children().fadeTo(0,0);
+	x = 0;
+	$('#ac-fader').children().each(function(){
+		imgs[x] = this;
+		x++;
+	});
+	if (randomize == true) {
+		imgs.sort(function(){ return Math.random()-0.5; });
 	}
+	$(imgs[imgn]).fadeTo(int,1);
+	t = setTimeout('spotlight()',spot);
 }
 
 function spotlight() {

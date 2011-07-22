@@ -8,8 +8,8 @@ Installation:
 	<link href="ac-fader.css" type="text/css" rel="stylesheet"/>
 	<script type="text/javascript" language="javascript" src="ac-fader.js"></script>
 3.	Add the fader to your page by adding the following HTML into your page:
-	<div id="#ac-fader"></div>
-4.	Put any images or slides inside the <div#ac-fader>.
+	<div class="ac-fader"></div>
+4.	Put any images or slides inside the <div.ac-fader>.
 
 License:
 

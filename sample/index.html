@@ -12,17 +12,33 @@ body {
 	margin: 0;
 	padding: 0;
 }
-#ac-fader {
-	margin: 150px auto 0;
+.ac-fader {
+	top: 150px;
+	margin: 0 auto;
+}
+#ac-fader0 {
+	right: 20%;
 	width: 270px;
 }
+#ac-fader1 {
+	left: 20%;
+	width: 270px;
+}
+
 
 </style>
 </head>
 
 <body>
 
-<div id="ac-fader">
+<div id="ac-fader0" class="ac-fader ac-randomize">
+	<img src="davo.jpg" alt="Original Davo" />
+	<img src="davo2.jpg" alt="Mixed Davo" />
+	<img src="davo3.jpg" alt="Saturated Davo" />
+	<img src="davo4.jpg" alt="Desaturated Davo" />
+</div>
+
+<div id="ac-fader1" class="ac-fader">
 	<img src="davo.jpg" alt="Original Davo" />
 	<img src="davo2.jpg" alt="Mixed Davo" />
 	<img src="davo3.jpg" alt="Saturated Davo" />
