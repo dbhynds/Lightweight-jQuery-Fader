@@ -16,11 +16,8 @@ function makefader(obj,i) {
 		this.imgs = makeslides(obj);
 	}
 	this.n = 0;
-	this.init = function() {
-		$(this.imgs[this.n]).fadeTo(int,1);
-		setTimeout(function(){t(i)},spot);
-	}
-	this.init();
+	$(this.imgs[this.n]).fadeTo(int,1);
+	setTimeout(function(){t(i)},spot);
 }
 function t(i) {
 	thisfader = faders[i];
