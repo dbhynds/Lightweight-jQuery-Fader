@@ -1,6 +1,6 @@
 var spot = 4000; // time slides stay visible for
 var int = 300 // time it takes for slides to transition
-var randomizeAll = false; // change to true to have the images display in random order
+var randomizeAll = false; // change to true to have all faders display in random order
 
 var faders = new Array;
 function init() {
